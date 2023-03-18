@@ -306,6 +306,15 @@ keywords = [
 ]
 
 [[rules]]
+description = "Discord webhook"
+id = "discord-webhook"
+regex = '''(?i)(?:discord\.com)\/api\/webhooks\/[\d]+\/([A-z0-9_-]+)'''
+secretGroup = 1
+keywords = [
+    "discord",
+]
+
+[[rules]]
 description = "Doppler API token"
 id = "doppler-api-token"
 regex = '''(dp\.pt\.)(?i)[a-z0-9]{43}'''
